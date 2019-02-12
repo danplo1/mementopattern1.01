@@ -11,9 +11,20 @@ public class PlayerMemento {
 
 
     public PlayerMemento(int healthpoint, Weapon activeWeapon, List<Weapon> weapons) {
-
         this.healthpoint = healthpoint;
         this.activeWeapon = activeWeapon;
         this.weapons = weapons;
+    }
+
+    int getHealthpoint() {
+        return healthpoint;
+    }
+
+    Weapon getActiveWeapon() {
+        return activeWeapon;
+    }
+
+    List<Weapon> getWeapons() {
+        return weapons;
     }
 }

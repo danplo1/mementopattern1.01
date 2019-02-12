@@ -26,18 +26,29 @@ public class Game {
                     break;
                 case "reload":
                     player.reload();
+                    player.printStatus();
                     break;
                 case "glock":
                     player.changeToGlock();
+                    player.printStatus();
                     break;
                 case "shotgun":
                     player.changeToShotgun();
+                    player.printStatus();
                     break;
                 case "save":
                     caretaker.saveGame(player);
+                    System.out.println(" Gra została zapisana!");
+                    break;
+                case "load":
+                    player = caretaker.loadGame();
+                    System.out.println(" Gra została załadowana!");
+                    player.printStatus();
+                    break;
 
             }
-            scanner.close();
+
         }
+        scanner.close();
     }
 }

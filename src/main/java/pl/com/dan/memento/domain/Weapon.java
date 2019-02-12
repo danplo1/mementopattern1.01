@@ -31,4 +31,8 @@ public class Weapon {
 
         this.bulletsLeft = this.bulletsInClip;
     }
+
+    public String getName(){
+        return name;
+    }
 }
